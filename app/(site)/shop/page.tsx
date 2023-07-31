@@ -6,8 +6,14 @@ import RightBanner from '@/components/layers/RightBanner';
 import TopBanner from '@/components/layers/TopBanner';
 import ShopCard from '@/components/shop/ShopCard';
 import NewProductModal from '@/components/shop/NewProductModal';
+import type { Metadata } from 'next'
 
 interface ShopProps { }
+
+export const metadata: Metadata = {
+        title: 'saller | shop',
+        description: 'salle',
+    }
 
 const Shop: FC<ShopProps> = ({ }) => {
         const products = [
